@@ -1,11 +1,12 @@
 function [] = the_matrix_lab_has_you(my_firstname)
 %
-% Author : nicolas.douillet (at) free.fr, 2020.
+% Author : nicolas.douillet9 (at) gmail.com, 2020-2024.
 %
 %
 % /_!_\ Caution : this program clears your Matlab console and may also
 % change some of your Matlab preferences (font and background colors) if
-% interrupted while running. /_!_\
+% interrupted while running. /_!_\ NB : to recover, Matlab (R) default font
+% is 'Monospaced'.
 %
 %
 % Input argument (optional)
