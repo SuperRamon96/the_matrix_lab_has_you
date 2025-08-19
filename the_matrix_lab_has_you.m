@@ -143,3 +143,43 @@ com.mathworks.services.ColorPrefs.notifyColorListeners('ColorsBackground'); clea
 
 
 end % the_matrix_lab_has_you
+Neo
+function [] = the_matrix_lab_has_you(my_firstname)
+%
+% Author :GitHub Copilot
+%
+% /_!_\ Caution : this program clears your Matlab console and may also
+% change some of your Matlab preferences (font and background colors) if
+% interrupted while running. /_!_\ NB : to recover, Matlab (R) default font
+% is 'Monospaced'.
+%function tests = test_the_matrix_lab_has_you
+tests = functiontests(localfunctions);
+end
+
+function testDefaultName(testCase)
+    try
+        the_matrix_lab_has_you();
+        verifyTrue(testCase, true); % If no error, pass
+    catch
+        verifyTrue(testCase, false); % If error, fail
+    end
+end
+
+function testCustomName(testCase)
+    try
+        the_matrix_lab_has_you('Trinity');
+        verifyTrue(testCase, true);
+    catch
+        verifyTrue(testCase, false);
+    end
+end
+
+function testInvalidInput(testCase)
+    try
+        the_matrix_lab_has_you(123);
+        verifyTrue(testCase, true);
+    catch
+        verifyTrue(testCase, false);
+    end
+end
+
